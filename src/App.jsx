@@ -13,6 +13,7 @@ function App() {
   useEffect(() => {
     if (Object.keys(coins).length > 0) {
       const cryptoQuote = async () => {
+        setResult({});
         setLoading(true);
 
         const { coin, cryptocoin } = coins;
