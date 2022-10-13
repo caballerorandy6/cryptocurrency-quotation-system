@@ -5,14 +5,13 @@ const Result = ({ result }) => {
     result;
 
   return (
-    <div className="flex mx-auto w-3/5  justify-center items-center mt-10 text-white  gap-2 text-start ">
-      <div className="w-1/3">
-        <img
-          className="w-44"
-          src={`https://cryptocompare.com/${IMAGEURL}`}
-          alt="crypto image"
-        />
-      </div>
+    <div className="md:flex mx-auto w-3/5 gap-28  md:justify-center md:items-center mt-14 text-white text-start ">
+      <img
+        className="w-44"
+        src={`https://cryptocompare.com/${IMAGEURL}`}
+        alt="crypto image"
+      />
+
       <div className="w-2/3">
         <p className="text-3xl font-bold">
           The price is: <span className="text-yellow-500">{PRICE}</span>

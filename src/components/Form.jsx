@@ -51,7 +51,7 @@ const Form = ({ setCoins }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1 className="text-center mb-1 text-3xl text-white uppercase font-bold">
+      <h1 className="text-center mb-1 text-xl sm:text-2xl md:3xl text-white uppercase font-bold">
         Instant cryptocurrency trading
       </h1>
 
@@ -69,7 +69,7 @@ const Form = ({ setCoins }) => {
       <input
         type="submit"
         value="submit"
-        className="bg-blue-700 hover:bg-blue-800 transition-colors text-white font-bold p-2 w-full block uppercase cursor-pointer"
+        className="lg:4-12 bg-blue-700 hover:bg-blue-800 transition-colors text-white font-bold p-2 w-full block uppercase cursor-pointer"
       />
     </form>
   );

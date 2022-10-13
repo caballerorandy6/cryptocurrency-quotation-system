@@ -33,11 +33,15 @@ function App() {
   }, [coins]);
 
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center">
       <Header />
-      <div className="mx-auto flex w-5/6 justify-around items-center">
-        <img src={Image} alt="image" className="w-1/3" />
-        <div className="w-1/3">
+      <div className="lg:flex">
+        <img
+          src={Image}
+          alt="image"
+          className="w-6/12 sm:w-6/12 md:w-6/12 lg:w-5/12 mx-auto "
+        />
+        <div className="w-6/12 text-center mx-auto sm:w-4/12 md:w-3/12 lg:w-1/5 mt-10">
           <Form setCoins={setCoins} />
         </div>
       </div>
